@@ -30,12 +30,13 @@ portfolio/
 ## 📬 Contact
 
 📧 Email: huzaifafalak34@gmail.com
+
 📱 WhatsApp: +92-3235126136
 
 ## 🤝 Let's Connect
 
 - [LinkedIn](in/huzaifa-falak-8bb46b345)  
-- [GitHub](https://github.com/yourusername)  
+- [GitHub](https://github.com/huzaifafalak)  
 - [Instagram](
 https://www.instagram.com/huzaifa_falak_34?igsh=a3dkbDZiN2o2anNx)  
 

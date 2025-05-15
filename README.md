@@ -34,9 +34,10 @@ portfolio/
 
 ## 🤝 Let's Connect
 
-- [LinkedIn](https://linkedin.com/in/yourprofile)  
+- [LinkedIn](in/huzaifa-falak-8bb46b345)  
 - [GitHub](https://github.com/yourusername)  
-- [Instagram](https://instagram.com/yourhandle)  
+- [Instagram](
+https://www.instagram.com/huzaifa_falak_34?igsh=a3dkbDZiN2o2anNx)  
 
 ## 📄 License
 

@@ -29,8 +29,8 @@ portfolio/
 
 ## 📬 Contact
 
-📧 Email: your-email@example.com  
-📱 WhatsApp: +92-XXX-XXXXXXX  
+📧 Email: huzaifafalak34@gmail.com
+📱 WhatsApp: +92-3235126136
 
 ## 🤝 Let's Connect
 

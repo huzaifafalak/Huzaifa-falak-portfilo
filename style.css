@@ -1,0 +1,453 @@
+
+
+
+
+
+/* ===================normal css============ */
+*{
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform:capitalize;  
+}
+
+.normal{
+    background: rgba(255, 0, 0, 0.3); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 13px;
+    padding: 17px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.normal:hover {
+    background: rgba(255, 0, 0, 0.6);
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.4);
+    transform: scale(1.05);
+    color: white;
+}
+
+h1{
+  font-size: 25px;
+  color: white;
+  line-height: 12px;
+  font-weight: 700;
+}
+h2{
+  font-size: 20px;
+  color: white;
+  line-height: 12px;
+  font-weight: 700;
+}
+h4{
+  font-size: 18px;
+  color: white;
+  line-height: 12px;
+  font-weight: 700;
+}
+
+
+html,body{
+  max-width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth;
+}
+/* =================== normal css exit ============ */
+
+
+/* =============== scroll bar csss =============*/
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-button{
+  background: var(--accent-color);
+  
+ 
+
+}
+::-webkit-scrollbar-thumb{
+  background: var(--accent-color);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track{
+  background: black;
+}
+/* =============== scroll bar csss exit========= */
+
+ /* root colors */
+:root {
+    
+    
+    --hover-color: #D0021B;
+    --accent-color: #D0021B;
+    --card-color: rgb(41, 100, 209);
+
+    --text-color: #D0021B; 
+    --button-color: #D0021B;
+    --background-color:black;
+
+  }
+  /* root colors  exit*/
+
+
+
+  /* header section css */
+  .header-wrapper img{
+    width: 75px;
+    height: 75px;
+    
+  }
+
+#header .navbar{
+  background-color:black;
+ 
+  
+
+}
+.navbar .toggler-icon{
+  display: inline;
+}
+.navbar .toggler-close{
+  display: none;
+}
+#header .navbar-nav .nav-link {
+  color: white;
+  padding-left: 15px;
+  font-size: 18px;
+  font-weight: 400;
+  position: relative;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+  
+
+}
+#header .navbar-nav .nav-link:hover,
+#header .navbar-nav .nav-link.active{
+
+  color: var(--text-color);
+  transition: 0.4s ease-in-out;
+}
+
+
+#header .navbar-nav .nav-link:hover::before,
+#header .navbar-nav .nav-link.active::before{
+
+  content: "";
+  position: absolute;
+  width: 34px;
+  height: 3px;
+  left: 16px;
+  top: 100%;
+  background-color: var(--text-color);
+}
+
+
+/* header section css  exit*/
+
+
+
+
+
+/* home section css */
+
+.home-wrapper{
+  width: 100%;
+  height: 90vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 15px;
+  
+}
+.home-wrapper .about-text{
+ display: flex;
+ flex-direction: column;
+ padding: 0px 12px;
+ margin-right: 15%;
+  
+}
+.home-wrapper .about-text h1{
+  font-size: 25px;
+  color: white;
+
+
+}
+.home-wrapper .about-text h1 span{
+  color: var(--text-color);
+  font-size: 27px;
+
+}
+
+.home-wrapper .about-text p{
+   color: white;
+   font-size: 18px;
+   text-wrap: wrap;
+   margin-top: 10px;
+}
+.home-wrapper a{
+  text-decoration: none;
+  color: white;
+  
+  
+}
+
+.home-wrapper .img-cont{
+  margin-right: 9%;
+  min-width:25%;
+  min-height: 60%;
+  background-color: black;
+  border-radius: 50%;
+  background-image: url(./img/without\ background-profile.png);
+  background-size: cover;
+  object-fit: cover;
+  background-position: top 28% left 12%;
+  background-repeat: no-repeat;
+  box-shadow: 1px 3px 30px red;
+  animation: glow 1.4s infinite;
+}
+@keyframes glow {
+  0% {
+      box-shadow: 0 0 10px rgba(255, 0, 0, 0.6); 
+  }
+  100% {
+      box-shadow: 0 0 20px rgba(255, 165, 0, 0.8); 
+  }
+}
+.typing-text::after {
+  content: "|";
+  display: inline-block;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+/* home section css  exit*/
+
+
+
+
+
+  /* about section css */
+ .about-wrapper{
+  background-color: black;
+  color: white;
+ 
+}
+.about-wrapper h2{
+  color: var(--text-color);
+}
+
+.about-wrapper ul.nav-pills{
+  border: 1px solid var(--accent-color);
+  border-radius: 50px;
+}
+
+.about-wrapper ul li .nav-link{
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 500;
+  border: 0;
+  color: var(--text-color);
+  
+  display: inline-block;
+}
+
+.about-wrapper ul li .nav-link.active{
+  background-color: var(--button-color); 
+}
+
+.about-wrapper .single-progress{
+  margin-top: 26px;
+  position: relative;
+  overflow: hidden;
+}
+.about-wrapper .single-progress .progress{
+  height: 4px;
+  border-radius: 4px;
+  box-shadow: none;
+  background-color: white;
+  overflow: visible;
+}
+.about-wrapper .single-progress .progress-bar{
+  background-color: var(--accent-color);
+}
+.about-wrapper .single-progress .label{
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 14px;
+  }
+  /* about section css exit */
+
+
+
+  
+  /* services section css */
+  .services-wrapper{
+    background-color: black;
+    color: white;
+
+  }
+  .services-wrapper .subtitle{
+    color: var(--text-color);
+    font-weight: 800;
+
+  }
+  .services-wrapper .card{
+    background-color: rgb(1, 1, 20);
+    cursor: pointer;
+    border-radius: 10px;
+    transition:transform 0.62s cubic-bezier(0.075, 0.82, 0.165, 1);
+    box-shadow:0px 1px 6px 4px  rgb(41, 100, 209);
+  }
+  .services-wrapper .card:hover{
+    box-shadow:0px 1px 6px 4px  var(--accent-color) ;
+    transform: translateY(-5px);
+  }
+    /* serivces section css exit*/
+
+
+
+
+    /* portfilo section css */
+    .portfilo-wrapper{
+      background-color: black;
+      color: white;
+  
+    }
+    .portfilo-wrapper .subtitle{
+      color: var(--text-color);
+      font-weight: 800;
+  
+    }
+    .portfilo-wrapper .card{
+      height: 400px;
+      overflow: hidden;
+      border: 1px solid blue;
+      cursor: pointer;
+      box-shadow: 0px 1px 6px 4px  var(--card-color);
+      color: black;
+      
+
+    }
+    .portfilo-wrapper .card img:hover{
+      transform: translateY(-50%);
+      transition: 4s ease-in-out;
+    }
+    
+   
+    /* portfilo section css  exit*/
+
+
+
+    /* contact section css */
+    .contact-wrapper{
+      background-color: black;
+      color: white;
+    }
+    .contact-wrapper .form-control{
+      background-color: transparent;
+      font-weight: 400;
+      font-size: 15px;
+      border-color: var(--accent-color);
+      border-radius: 10px;
+      
+
+
+    }
+    .contact-wrapper textarea{
+      padding: 20px;
+    }
+    .contact-wrapper .form-control:focus{
+      background-color: black;
+      color: white;
+      
+    }
+    .contact-wrapper .btn{
+      background-color: var(--accent-color);
+      color:white;
+      border-radius: 10px;
+    }
+    .contact-wrapper .btn:hover{
+      background-color: var(--accent-color);
+      color:white;
+    }
+    #success-message{
+      background: var(--accent-color);
+      border-radius: 8px;
+      box-shadow: none !important;
+      border: none !important;
+      text-transform: none !important;
+    }
+    #success-message span p{
+      font-size: 12px;
+      margin-left: 15px;
+      font-weight: 700;
+      font-style: oblique;
+      word-spacing: 6px;
+
+      
+       color: white;
+      
+    }
+   
+    /* contact section css  exit*/
+   
+    
+       /* footer section css */
+       .footer-wrapper{
+        background-color: black;
+        color: white;
+        padding: 10px 0px;
+        
+       }
+       .footer-wrapper img{
+        width: 75px;
+        height: 75px;
+        
+      }
+      .footer-wrapper .social-icon li{
+        margin:6px;
+      }
+      .footer-wrapper .social-icon li a{
+        width: 35px;
+        height:35px;
+        line-height: 30px;
+        font-size: 14px;
+        display: inline-block;
+        border: 2px solid var(--accent-color);
+        color: var(--accent-color);
+        border-radius: 100%;
+        transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+        text-align: center;
+        -webkit-transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+      }
+      .footer-wrapper .social-icon li a:hover{
+        background-color: var(--accent-color);
+        border-color: var(--accent-color);
+        color: white;
+        box-shadow: 0px 10px 15px var(--accent-color);
+        transform: translateY(-5px);
+      }
+      .footer-wrapper .copyright-text a{
+        color: var(--accent-color);
+        
+      }
+      .footer-wrapper .copyright-text p{
+        font-size: 15px;
+        line-height: 20px;
+
+      }
+       /* footer section css exit */
+
+   
